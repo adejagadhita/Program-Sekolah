@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Absensi</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div>
+
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <div>
+                    <h3>GLOBALITI</h3>
+                    <span>Sistem Absensi</span>
+                </div>
+            </div>
+
+            <ul class="menu">
+                <li><i class="fa-solid fa-table-columns"></i> Dashboard</li>
+                <li><i class="fa-solid fa-users"></i> Data Siswa</li>
+
+                <li class="active">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Absensi
+                </li>
+
+                <li><i class="fa-solid fa-chart-column"></i> Rekap Absensi</li>
+                <li><i class="fa-solid fa-calendar"></i> Jadwal</li>
+                <li><i class="fa-solid fa-file-lines"></i> Laporan</li>
+                <li><i class="fa-solid fa-star"></i> Fitur Premium</li>
+                <li><i class="fa-solid fa-gear"></i> Pengaturan</li>
+            </ul>
+
+        </div>
+
+        <div class="hide-menu">
+            <i class="fa-solid fa-chevron-left"></i>
+            Sembunyikan
+        </div>
+
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+
+        <!-- TOPBAR -->
+        <div class="topbar">
+
+            <div class="breadcrumb">
+                <i class="fa-solid fa-house"></i>
+                <span>Absensi</span>
+            </div>
+
+            <div class="top-right">
+
+                <div class="clock">
+                    <h4>13.14.13</h4>
+                    <small>Senin, 18 Mei 2026</small>
+                </div>
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text"
+                    placeholder="Cari siswa, kelas...">
+                </div>
+
+                <div class="profile">
+                    <div class="avatar">PB</div>
+
+                    <div>
+                        <h5>Pak Budi</h5>
+                        <span>Admin</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- HEADER -->
+        <div class="page-header">
+
+            <div>
+                <h2>Input Absensi</h2>
+            </div>
+
+            <div class="warning-box">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Jangan lupa simpan absensi
+            </div>
+
+        </div>
+
+        <!-- FILTER -->
+        <div class="attendance-filter">
+
+            <div class="form-group">
+                <label>Kelas</label>
+
+                <select>
+                    <option>Pilih kelas</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Tanggal</label>
+
+                <input type="date">
+            </div>
+
+            <div class="form-group">
+                <label>Mata Pelajaran</label>
+
+                <select>
+                    <option>Pilih mata pelajaran</option>
+                </select>
+            </div>
+
+            <button class="btn-primary">
+                <i class="fa-solid fa-users"></i>
+                Muat Daftar Siswa
+            </button>
+
+        </div>
+
+        <!-- STATISTIK -->
+        <div class="attendance-stats">
+
+            <div class="att-card hadir">
+                <h2>31</h2>
+                <span>Hadir</span>
+            </div>
+
+            <div class="att-card izin">
+                <h2>0</h2>
+                <span>Izin</span>
+            </div>
+
+            <div class="att-card sakit">
+                <h2>0</h2>
+                <span>Sakit</span>
+            </div>
+
+            <div class="att-card alpha">
+                <h2>0</h2>
+                <span>Alpha</span>
+            </div>
+
+        </div>
+
+        <!-- TABLE -->
+        <div class="table-card">
+
+            <div class="table-header">
+                Daftar Siswa
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>FOTO</th>
+                        <th>NAMA SISWA</th>
+                        <th>NIS</th>
+                        <th>STATUS</th>
+                        <th>KETERANGAN</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td><div class="photo cyan">AP</div></td>
+                        <td>Andi Pratama</td>
+                        <td>20280001</td>
+
+                        <td>
+                            <div class="status-group">
+                                <button class="status-btn hadir-btn">H</button>
+                                <button class="status-btn">I</button>
+                                <button class="status-btn">S</button>
+                                <button class="status-btn">A</button>
+                            </div>
+                        </td>
+
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td><div class="photo green">BS</div></td>
+                        <td>Budi Santoso</td>
+                        <td>20280002</td>
+
+                        <td>
+                            <div class="status-group">
+                                <button class="status-btn hadir-btn">H</button>
+                                <button class="status-btn">I</button>
+                                <button class="status-btn">S</button>
+                                <button class="status-btn">A</button>
+                            </div>
+                        </td>
+
+                        <td></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="attendance-footer">
+
+            <div>
+                31/31 siswa telah diabsen
+            </div>
+
+            <div class="progress-box">
+                <div class="progress-fill"></div>
+            </div>
+
+            <button class="btn-primary">
+                <i class="fa-solid fa-floppy-disk"></i>
+                Simpan Absensi
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

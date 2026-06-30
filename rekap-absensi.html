@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekap Absensi</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div>
+
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <div>
+                    <h3>GLOBALITI</h3>
+                    <span>Sistem Absensi</span>
+                </div>
+            </div>
+
+            <ul class="menu">
+                <li>
+                    <i class="fa-solid fa-table-columns"></i>
+                    Dashboard
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-users"></i>
+                    Data Siswa
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Absensi
+                </li>
+
+                <li class="active">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Rekap Absensi
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-calendar"></i>
+                    Jadwal
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-file-lines"></i>
+                    Laporan
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-star"></i>
+                    Fitur Premium
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-gear"></i>
+                    Pengaturan
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="hide-menu">
+            <i class="fa-solid fa-chevron-left"></i>
+            Sembunyikan
+        </div>
+
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+
+        <!-- TOPBAR -->
+        <div class="topbar">
+
+            <div class="breadcrumb">
+                <i class="fa-solid fa-house"></i>
+                <span>Rekap Absensi</span>
+            </div>
+
+            <div class="top-right">
+
+                <div class="clock">
+                    <h4>13.20.20</h4>
+                    <small>Senin, 18 Mei 2026</small>
+                </div>
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Cari siswa, kelas...">
+                </div>
+
+                <div class="profile">
+                    <div class="avatar">PB</div>
+
+                    <div>
+                        <h5>Pak Budi</h5>
+                        <span>Admin</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PAGE HEADER -->
+        <div class="page-header">
+            <h2>Rekap Absensi</h2>
+        </div>
+
+        <!-- FILTER -->
+        <div class="rekap-filter">
+
+            <div class="period-tabs">
+                <button class="active-tab">Mingguan</button>
+                <button>Bulanan</button>
+                <button>Semester</button>
+                <button>Custom</button>
+            </div>
+
+            <select>
+                <option>Semua Kelas</option>
+            </select>
+
+            <button class="btn-primary">
+                Terapkan Filter
+            </button>
+
+        </div>
+
+        <!-- SUMMARY -->
+        <div class="rekap-summary">
+
+            <div class="summary-card attendance-circle">
+
+                <div class="circle-progress">
+                    94.2%
+                </div>
+
+                <h4>Rata-rata Kehadiran</h4>
+                <p>Periode Mingguan</p>
+
+            </div>
+
+            <div class="summary-card">
+
+                <div class="summary-icon green-bg">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                </div>
+
+                <h2>920</h2>
+                <span>Total Hadir</span>
+
+                <small>+3.2% dibanding minggu lalu</small>
+
+            </div>
+
+            <div class="summary-card">
+
+                <div class="summary-icon red-bg">
+                    <i class="fa-solid fa-arrow-trend-down"></i>
+                </div>
+
+                <h2>14</h2>
+                <span>Total Alpha</span>
+
+                <small>-1 dibanding minggu lalu</small>
+
+            </div>
+
+        </div>
+
+        <!-- CHART -->
+        <div class="rekap-chart-grid">
+
+            <div class="chart-card">
+
+                <h4>Breakdown Harian</h4>
+
+                <div class="chart-placeholder">
+                    Grafik Kehadiran Harian
+                </div>
+
+            </div>
+
+            <div class="chart-card">
+
+                <h4>Distribusi Keseluruhan</h4>
+
+                <div class="chart-placeholder">
+                    Grafik Donut
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RANKING -->
+        <div class="table-card">
+
+            <div class="table-header">
+                Ranking Kehadiran Siswa
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>RANK</th>
+                        <th>SISWA</th>
+                        <th>KELAS</th>
+                        <th>% HADIR</th>
+                        <th>TREND</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td><span class="rank gold">1</span></td>
+                        <td>Andi Pratama</td>
+                        <td>X IPA 1</td>
+
+                        <td>
+                            <div class="progress-mini">
+                                <div class="progress-mini-fill w99"></div>
+                            </div>
+                            99.2%
+                        </td>
+
+                        <td>
+                            <i class="fa-solid fa-arrow-trend-up trend-up"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="rank silver">2</span></td>
+                        <td>Citra Dewi</td>
+                        <td>XI IPA 1</td>
+
+                        <td>
+                            <div class="progress-mini">
+                                <div class="progress-mini-fill w98"></div>
+                            </div>
+                            98.7%
+                        </td>
+
+                        <td>
+                            <i class="fa-solid fa-arrow-trend-up trend-up"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="rank bronze">3</span></td>
+                        <td>Gita Kusuma</td>
+                        <td>X IPA 2</td>
+
+                        <td>
+                            <div class="progress-mini">
+                                <div class="progress-mini-fill w98"></div>
+                            </div>
+                            98.1%
+                        </td>
+
+                        <td>
+                            <i class="fa-solid fa-arrow-trend-up trend-up"></i>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
